@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/userinfo', 'Auth\AuthController@index')->name('userinfo');
+Route::post('/userinfo', 'Auth\AuthController@userinfoEdit')->name('userinfo');
+
 Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 {
     $router->get('login', 'LoginController@showLoginForm')->name('admin.login');
