@@ -70,7 +70,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
-        Echo.channel('chat-room.1')
+        Echo.private('chat-room.1')
             .listen('ChatMessageWasReceived', function (data) {
                 console.log(data.user, data.chatMessage);
             });

@@ -36,9 +36,9 @@ class ChatMessageWasReceived extends Event implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        //return new PrivateChannel('channel-name');
-        return [
+        return new PrivateChannel('chat-room.1');
+        /*return [
             "chat-room.1"
-        ];
+        ];*/
     }
 }
