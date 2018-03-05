@@ -12,8 +12,8 @@
                     </div>
 
                     <div class="links">
-                        <a href="https://laravel.com/docs">别墅管家</a>
-                        <a href="https://laracasts.com">留言吧</a>
+                        <a href="{{ url('/home') }}">别墅管家</a>
+                        <a href="{{ url('/message') }}">留言吧</a>
                         <a href="https://forge.laravel.com">交流吧</a>
                         <a href="https://laravel-news.com">旅游资讯</a>
                     </div>
