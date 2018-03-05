@@ -14,7 +14,7 @@ class Potrait extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->text('portrait');//肖像
+            $table->text('portrait')->nullable();;//肖像
         });
     }
 
