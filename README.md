@@ -1,6 +1,6 @@
 # laravel-VillaExtension
-别墅管理系统
-## 安装步骤 composer install //composer下载所需扩展
+#别墅管理系统
+###### 安装步骤 composer install //composer下载所需扩展
 ###### php artisan key:generate 生成APP_KEY
 ###### php artisan migrate 执行数据库表生成 php artisan serve 启动项目
 ## 添加User表软删除
