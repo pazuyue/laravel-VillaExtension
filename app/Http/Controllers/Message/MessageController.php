@@ -6,7 +6,7 @@
  * Time: 下午6:21
  */
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Message;
 
 
 use App\Http\Controllers\Controller;
@@ -15,7 +15,6 @@ class MessageController extends Controller
 {
 
     public function index(){
-        dump(123);
 
         return view('auth.message.messageList');
     }

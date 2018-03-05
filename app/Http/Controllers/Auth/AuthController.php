@@ -21,7 +21,13 @@ class AuthController extends Controller
     public function index()
     {
         $user=Auth::user();
-        $user->portrait_img=json_decode($user->portrait)->store_name;
+
+        if (empty($user->portrait)){
+            $user->portrait_img="";
+        }else{
+            $user->portrait_img=json_decode($user->portrait)->store_name;
+        }
+
         return view('auth.userinfo',compact('user'));
     }
 
