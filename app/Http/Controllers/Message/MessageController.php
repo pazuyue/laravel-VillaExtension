@@ -14,8 +14,14 @@ use App\Http\Controllers\Controller;
 class MessageController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
 
+        $message = DB::table('message')->get();
         return view('auth.message.messageList');
     }
 

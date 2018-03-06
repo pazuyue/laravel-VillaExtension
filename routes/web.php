@@ -22,7 +22,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/userinfo', 'Auth\AuthController@index')->name('userinfo');
 Route::post('/userinfo', 'Auth\AuthController@userinfoEdit')->name('userinfo');
 
-Route::get('/message','Message\MessageController@index');
+Route::group(['namespace' => 'Message','middleware' => ['auth']],function ($router)
+{
+    $router->get('/message','MessageController@index');
+});
+
 
 Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 {
