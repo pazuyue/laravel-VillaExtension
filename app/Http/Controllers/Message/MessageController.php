@@ -25,7 +25,8 @@ class MessageController extends Controller
         $message_rows = DB::table('message')
             ->join('users', 'message.user_id', '=', 'users.id')
             ->select('users.portrait','users.name','message.*')
-            ->where('parent_id', '=', '0')
+            ->where([['parent_id', '=', '0']])
+            ->orderBy('created_at','desc')
             ->paginate(15);
 
         foreach ($message_rows->items() as &$value){
