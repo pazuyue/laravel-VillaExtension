@@ -6,3 +6,5 @@
 ## 添加User表软删除
 ###### use SoftDeletes;
 ###### protected $dates = ['delete_at']; 位置：vendor\laravel\framework\src\Illuminate\Foundation\Auth\User.php
+
+
