@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -25,36 +25,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">{{ config('app.name', 'Laravel') }}</a>
+            <a class="navbar-brand" href="#">心语培训</a>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">心语历程</a></li>
+                <li><a href="#">教育咨询</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        {{ Auth::user()->name }} <b class="caret"></b>
+                        课程介绍 <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">退出</a></li>
-                        <li><a href="{{ url('/home') }}">首页</a></li>
-                        <li><a href="{{ url('userinfo') }}">用户信息</a></li>
-
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
+                        <li><a href="#">书法</a></li>
+                        <li><a href="#">钢琴</a></li>
+                        <li><a href="#">美术</a></li>
+                        <li><a href="#">舞蹈</a></li>
                     </ul>
                 </li>
+                <li><a href="#">联系我们</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-        @yield('content')
-    </div>
+<div class="container">
+    @yield('body')
+    @yield('food')
 </div>
+
 
 </body>
 </html>

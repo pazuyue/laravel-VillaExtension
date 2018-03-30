@@ -35,7 +35,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
     $router->post('logout', 'LoginController@logout');
     $router->get('register', 'RegisterController@showRegistrationForm');
     $router->post('register', 'RegisterController@register');
-
+    $router->get('/', 'DashboardController@index');
     $router->get('dash', 'DashboardController@index');
 
 });
