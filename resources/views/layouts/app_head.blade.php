@@ -14,7 +14,6 @@
 
 </head>
 <body>
-
 <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -48,8 +47,8 @@
         </div>
     </div>
 </nav>
-
 <div class="container">
+
     @yield('body')
     @yield('food')
 </div>

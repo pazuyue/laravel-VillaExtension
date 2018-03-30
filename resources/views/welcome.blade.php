@@ -46,10 +46,11 @@
         </div>
 
         <div class="col-md-4">
-            <ol class="breadcrumb">
-                <li>教育咨询</li>
-                <li class="active"><?php echo date("m")?>月</li>
-            </ol>
+            <div class="row">
+                <div class="col-md-12" style="background-image: url({{ asset('mig/title_bg.png') }}) ; background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%; ">
+                    <h2 style="font-weight: bold; text-align: center">教育咨询</h2>
+                </div>
+            </div>
             <ul class="list-group">
                 <li class="list-group-item">
                     <span class="badge">2018-03-30</span>
@@ -75,44 +76,40 @@
                     <span class="badge">2018-03-30</span>
                     培养孩子的积极性
                 </li>
-                <li class="list-group-item">
-                    <span class="badge">2018-03-30</span>
-                    谁动了我的蛋糕
+                <li class="list-group-item" style="padding: 0px">
+                    <img src="{{ asset('mig/logo01.gif') }}" width="100%">
                 </li>
             </ul>
         </div>
     </div>
 
     <div class="row" style="margin-top: 24px">
-        <div class="col-md-12">
-            <ol class="breadcrumb">
-                <li>心语历程</li>
-
-            </ol>
+        <div class="col-md-12" style="background-image: url({{ asset('mig/title_bg.png') }}) ; background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%; ">
+            <h2 style="font-weight: bold; text-align: center">心语历程</h2>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="{{ asset('mig/kittens.jpg') }}"
+                <img src="{{ asset('mig/img01.jpg') }}"
                      alt="通用的占位符缩略图">
             </a>
         </div>
         <div class="col-sm-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="{{ asset('mig/kittens.jpg') }}"
+                <img src="{{ asset('mig/mig02.jpg') }}"
                      alt="通用的占位符缩略图">
             </a>
         </div>
         <div class="col-sm-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="{{ asset('mig/kittens.jpg') }}"
+                <img src="{{ asset('mig/img01.jpg') }}"
                      alt="通用的占位符缩略图">
             </a>
         </div>
         <div class="col-sm-6 col-md-3">
             <a href="#" class="thumbnail">
-                <img src="{{ asset('mig/kittens.jpg') }}"
+                <img src="{{ asset('mig/mig02.jpg') }}"
                      alt="通用的占位符缩略图">
             </a>
         </div>
