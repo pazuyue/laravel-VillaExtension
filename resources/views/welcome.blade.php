@@ -101,7 +101,7 @@
                      alt="通用的占位符缩略图">
             </a>
         </div>
-        <div class="col-sm-6 col-md-3">
+        <div class="col-sm-6 col-md-3 ">
             <a href="#" class="thumbnail">
                 <img src="{{ asset('mig/img01.jpg') }}"
                      alt="通用的占位符缩略图">
@@ -116,17 +116,17 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 ">
             <h2>Safari bug warning!</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 ">
             <h2>Heading</h2>
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 ">
             <h2>Heading</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
             <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
@@ -139,7 +139,7 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <p>&copy; 2016 Company, Inc.</p>
+                    <p style="text-align: center;">&copy; 2016 Company, Inc.</p>
                 </div>
             </div>
         </div>
