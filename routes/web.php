@@ -50,4 +50,3 @@ Route::get('/about', 'Parenting\HomeController@index')->name('about');
 
 
 
-

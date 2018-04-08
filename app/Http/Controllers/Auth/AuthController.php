@@ -132,6 +132,10 @@ class AuthController extends Controller
 
     }
 
+    /**用户添加
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function userAdd(Request $request){
         $this->cors();
         $ret=$this->validator($request->all())->validate();
@@ -145,10 +149,30 @@ class AuthController extends Controller
                 'imageUrl' => $request->imageUrl,
             ]);
             return response()->json([
-
                 'code' => 1,
                 'message' => 'success',
                 'data'=>""
+            ]);
+        }
+    }
+
+    public function userDel(Request $request){
+        $this->cors();
+        $userid = $request->userid;
+        $user=User::find($userid);
+        $user->delete();
+        if($user->trashed()){
+
+            return response()->json([
+                'code' => 1,
+                'message' => 'success',
+                'data'=>"软删除成功"
+            ]);
+        }else{
+            return response()->json([
+                'code' => 1,
+                'message' => 'false',
+                'data'=>"软删除失败"
             ]);
         }
     }
