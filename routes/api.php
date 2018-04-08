@@ -21,4 +21,7 @@ Route::group(['prefix' => 'auth','namespace' => 'Auth'],function ($router)
 {
     $router->get('/userList', 'AuthController@userList');
     $router->post('/userAdd', 'AuthController@userAdd');
+    $router->post('/userFile', 'AuthController@userFile');
+
+
 });
