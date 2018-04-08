@@ -55,12 +55,6 @@ return [
             'visibility' => 'public',
         ],
 
-        'userPhoto' => [
-            'driver' => 'local',
-            'root' => storage_path('app/userPhoto'),
-            'url' => env('APP_URL').'/storage/userPhoto',
-            'visibility' => 'public',
-        ],
 
         's3' => [
             'driver' => 's3',
