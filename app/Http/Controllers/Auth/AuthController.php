@@ -35,22 +35,14 @@ class AuthController extends Controller
         ]);
     }
 
-    /**
-     * 解决跨域
-     */
-    public function cors(){
-        header('Access-Control-Allow-Origin:*');//允许所有来源访问
-        header("Access-Control-Allow-Methods:GET, POST, PATCH, PUT, DELETE, OPTIONS");
-        header("Access-Control-Allow-Headers:Origin, Content-Type, X-Auth-Token");
 
-    }
 
-    /**用户修改
+    /**用户修改数据显示
      * @param Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function userEdit(Request $request){
-        $this->cors();
+    public function userEditShow(Request $request){
+
         $userid = $request->userid;
         $user=User::find($userid);
         return response()->json([
@@ -60,12 +52,16 @@ class AuthController extends Controller
         ]);
     }
 
+    public function userEdit(Request $request){
+
+    }
+
     /**用户添加头像
      * @param Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function userFile(Request $request){
-        $this->cors();
+
         if (!$request->hasFile('file')) {
             return response()->json([], 500, '无法获取上传文件');
         }
@@ -78,15 +74,15 @@ class AuthController extends Controller
             $type = $file->getClientMimeType();     // image/jpeg
 
             // 上传文件
-            $filename = $request->fileNmae;
+            $filename = $request->fileNmae.".".$ext;
             // 使用我们新建的uploads本地存储空间（目录）
            // $path = $file->store($filename, 'uploads');
-            $path = $file->storeAs('userPhoto', $filename.'.jpg');
+            $path = $file->storeAs('userPhoto', $filename);
             return response()->json([
                 'code' => 1,
                 'message' => 'success',
                 'photo' => $path,
-                'name' => $originalName,
+                'name' => $filename,
             ]);
 
         } else {
@@ -98,7 +94,7 @@ class AuthController extends Controller
      * @return \Illuminate\Database\Eloquent\Collection|static[]
      */
     public function userList(){
-        $this->cors();
+
         $users=User::all();
         return $users;
     }
@@ -110,7 +106,7 @@ class AuthController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function userAdd(Request $request){
-        $this->cors();
+
         $ret=$this->validator($request->all())->validate();
 
         if(empty($ret)){
@@ -130,7 +126,7 @@ class AuthController extends Controller
     }
 
     public function userDel(Request $request){
-        $this->cors();
+
         $userid = $request->userid;
         $user=User::find($userid);
         $user->delete();
