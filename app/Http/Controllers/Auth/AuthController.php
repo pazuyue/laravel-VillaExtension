@@ -166,13 +166,13 @@ class AuthController extends Controller
             return response()->json([
                 'code' => 1,
                 'message' => 'success',
-                'data'=>"软删除成功"
+                'data'=>"冻结成功"
             ]);
         }else{
             return response()->json([
                 'code' => 1,
                 'message' => 'false',
-                'data'=>"软删除失败"
+                'data'=>"冻结失败"
             ]);
         }
     }
