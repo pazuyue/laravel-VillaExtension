@@ -11,12 +11,12 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
-use Illuminate\Http\Response;
+
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Storage;
+
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+
 
 
 class AuthController extends Controller
@@ -88,7 +88,7 @@ class AuthController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function userFile(Request $request){
-
+;
         if (!$request->hasFile('file')) {
             return response()->json([], 500, '无法获取上传文件');
         }

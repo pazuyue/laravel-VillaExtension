@@ -25,4 +25,5 @@ Route::group(['prefix' => 'auth','namespace' => 'Auth','middleware'=>'cors'],fun
     $router->get('/userDel', 'AuthController@userDel');
     $router->get('/userEdit', 'AuthController@userEditShow');
     $router->post('/userEdit', 'AuthController@userEdit');
+    $router->post('/login', 'LoginController@login');
 });

@@ -49,7 +49,7 @@
                                         退出
                                     </a>
                                     <a class="dropdown-item" href="{{ url('/home') }}">首页</a>
-                                    <a class="dropdown-item" href="{{ route('userinfo') }}">用户信息</a>
+
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
