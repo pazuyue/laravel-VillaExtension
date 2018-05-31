@@ -15,6 +15,16 @@
 
 </head>
 <body>
+
+<!-- Scripts -->
+<script src="js/app.js"></script>
+<script>
+    Echo.private('chat-room.2')
+        .listen('ChatMessageWasReceived', function (data) {
+            console.log(data.user, data.chatMessage);
+        });
+</script>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -66,14 +76,5 @@
             @yield('content')
         </main>
     </div>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script>
-        Echo.private('chat-room.1')
-            .listen('ChatMessageWasReceived', function (data) {
-                console.log(data.user, data.chatMessage);
-            });
-    </script>
 </body>
 </html>

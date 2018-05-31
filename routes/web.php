@@ -41,7 +41,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/getDate', 'HomeController@getDate')->name('getDate');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/about', 'Parenting\HomeController@index')->name('about');
