@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45cca984-e4f0-446e-8fbc-71c5e9333797" name="Default" comment="Pusher推送修复">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/File/FileController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/News/NewController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Article.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/News.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2018_08_14_035515_create_new_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2018_08_14_062615_add_image_url_to_news_table.php" />
+    <list default="true" id="45cca984-e4f0-446e-8fbc-71c5e9333797" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/News/NewController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/News/NewController.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +25,7 @@
       <file leaf-file-name="AuthController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="2736">
               <caret line="155" column="4" lean-forward="false" selection-start-line="155" selection-start-column="4" selection-end-line="171" selection-end-column="9" />
               <folding>
                 <element signature="e#129#165#0#PHP" expanded="true" />
@@ -41,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/News/NewController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="57" column="11" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="57" selection-end-column="11" />
+            <state relative-caret-position="456">
+              <caret line="107" column="57" lean-forward="false" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
               <folding>
                 <element signature="e#128#164#0#PHP" expanded="true" />
               </folding>
@@ -56,7 +49,7 @@
       <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
+            <state relative-caret-position="1140">
               <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="30" />
               <folding>
                 <element signature="e#7#96#0#PHP" expanded="true" />
@@ -79,8 +72,8 @@
       <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="190">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding>
                 <element signature="e#121#160#0#PHP" expanded="true" />
               </folding>
@@ -88,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="637">
+              <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -182,10 +175,10 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_08_14_062615_add_image_url_to_news_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_08_14_035515_create_new_table.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Validation/Validator.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/News/NewController.php" />
         <option value="$PROJECT_DIR$/app/Models/Article.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/News/NewController.php" />
       </list>
     </option>
   </component>
@@ -222,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -329,12 +321,39 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="News" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelVillaExtension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravelVillaExtension" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Auth" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -493,7 +512,8 @@
       <workItem from="1540382663850" duration="3223000" />
       <workItem from="1540435499576" duration="537000" />
       <workItem from="1540526167789" duration="6254000" />
-      <workItem from="1540782780197" duration="1393000" />
+      <workItem from="1540782780197" duration="2033000" />
+      <workItem from="1540797542440" duration="1297000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1522432490645</created>
@@ -565,17 +585,24 @@
       <option name="project" value="LOCAL" />
       <updated>1527769651752</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="类目处理">
+      <created>1540784186589</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1540784186589</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119313000" />
+    <option name="totallyTimeSpent" value="121250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="860" extended-state="0" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34153402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34659913" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32841823" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -638,7 +665,8 @@
     <MESSAGE value="文件上传调整" />
     <MESSAGE value="用户登陆" />
     <MESSAGE value="Pusher推送修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pusher推送修复" />
+    <MESSAGE value="类目处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="类目处理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -949,19 +977,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/News/NewController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="57" column="11" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="57" selection-end-column="11" />
-          <folding>
-            <element signature="e#128#164#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="2736">
           <caret line="155" column="4" lean-forward="false" selection-start-line="155" selection-start-column="4" selection-end-line="171" selection-end-column="9" />
           <folding>
             <element signature="e#129#165#0#PHP" expanded="true" />
@@ -973,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,8 +1004,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="190">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="e#121#160#0#PHP" expanded="true" />
           </folding>
@@ -997,7 +1014,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
+        <state relative-caret-position="1140">
           <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="30" />
           <folding>
             <element signature="e#7#96#0#PHP" expanded="true" />
@@ -1008,9 +1025,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="637">
+          <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/News/NewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="107" column="57" lean-forward="false" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
+          <folding>
+            <element signature="e#128#164#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

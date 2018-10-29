@@ -26,7 +26,7 @@ class NewController extends Controller
         if(empty($ret)){
             $new = new News;
             $new->title = $request->title;
-            $new->article_id = $request->article_id;
+            $new->article_id = json_encode($request->article_id);
             $new->imageUrl = $request->imageUrl;
             $new->content = $request->content_info;
             $new->user_id =1; //测试默认为1
@@ -86,9 +86,9 @@ class NewController extends Controller
     public function newEditShow(Request $request){
         $new_id = $request->new_id;
         $new=News::find($new_id);
-        /*if(!empty($new->imageUrl)){
-            $new->imageUrl= asset($new->imageUrl);
-        }*/
+        if(!empty($new->article_id)){
+            $new->article_id= json_decode($new->article_id);
+        }
 
         return response()->json([
             'code' => 1,
@@ -105,7 +105,7 @@ class NewController extends Controller
         $new_id = $request->new_id;
         $new=News::find($new_id);
         $new->title=$request->title;
-        $new->article_id=$request->article_id;
+        $new->article_id=json_encode($request->article_id);
         $new->imageUrl=$request->imageUrl;
         $new->content=$request->content_info;
         if($new->save()){
@@ -133,7 +133,7 @@ class NewController extends Controller
     {
         return Validator::make($data, [
             'title' => 'required|string|max:255',
-            'article_id' => 'required|int',
+            'article_id' => 'required|array',
             'content_info' => 'required',
         ]);
     }
