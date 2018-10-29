@@ -27,3 +27,27 @@ Route::group(['prefix' => 'auth','namespace' => 'Auth','middleware'=>'cors'],fun
     $router->post('/userEdit', 'AuthController@userEdit');
     $router->post('/login', 'LoginController@login');
 });
+
+Route::group(['prefix' => 'file','namespace' => 'File','middleware'=>'cors'],function ($router)
+{
+    $router->post('/pustFile', 'FileController@pustFile');
+});
+
+Route::group(['prefix' => 'news','namespace' => 'News','middleware'=>'cors'],function ($router)
+{
+    $router->post('/saveNew', 'NewController@saveNew');
+    $router->get('/newList', 'NewController@newList');
+    $router->get('/newDel', 'NewController@newDel');
+    $router->get('/newEdit', 'NewController@newEditShow');
+    $router->post('/newEdit', 'NewController@newEdit');
+});
+
+Route::group(['prefix' => 'article','namespace' => 'Article','middleware'=>'cors'],function ($router)
+{
+    $router->post('/saveArticle', 'ArticleController@saveArticle');
+    $router->get('/articleList', 'ArticleController@articleList');
+    $router->get('/getArticleList', 'ArticleController@getArticleList');
+    $router->get('/articleDel', 'ArticleController@articleDel');
+});
+
+
